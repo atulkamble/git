@@ -159,6 +159,155 @@ git log --oneline
 - Assignment 4: Identify five DevOps tools and their purposes.
 - Assignment 5: Install Git, create a repository, and make your first commit.
 
+# Version Control Systems (VCS) and Git
+
+## 1. Brief History of Version Control Systems
+
+Definition: A Version Control System (VCS) is a tool used to track, manage, and maintain changes to files and source code over time.
+
+| Year | Technology | Significance                         |
+| ---- | ---------- | ------------------------------------ |
+| 1972 | SCCS       | Early source code version control    |
+| 1982 | RCS        | File revision management             |
+| 1986 | CVS        | Centralized version control          |
+| 2000 | SVN        | Improved centralized version control |
+| 2005 | Git        | Distributed version control          |
+| 2008 | GitHub     | Cloud-based Git repository hosting   |
+
+### Types of Version Control
+
+| Type            | Description                             | Example        |
+| --------------- | --------------------------------------- | -------------- |
+| Local VCS       | Stores versions locally                 | RCS            |
+| Centralized VCS | Uses a central server                   | SVN, CVS       |
+| Distributed VCS | Every clone contains repository history | Git, Mercurial |
+
+## 2. Introduction to Git
+
+Definition: Git is a free, open-source, distributed version control system developed by Linus Torvalds in 2005.
+
+### Key Features
+
+- Distributed version control.
+- Tracks source code changes.
+- Supports branching and merging.
+- Enables team collaboration.
+- Maintains commit history.
+- Supports offline development.
+- Integrates with CI/CD pipelines.
+
+### Important Git Terminology
+
+| Term       | Definition                             |
+| ---------- | -------------------------------------- |
+| Repository | Storage for project files and history  |
+| Commit     | Snapshot of tracked changes            |
+| Branch     | Independent line of development        |
+| Merge      | Combines changes from branches         |
+| Clone      | Copies a remote repository             |
+| Push       | Uploads commits to a remote repository |
+| Pull       | Fetches and integrates remote changes  |
+
+## 3. Need for Version Control
+
+### Why Version Control Is Important
+
+1. Track changes in source code.
+2. Restore previous versions.
+3. Support multiple developers.
+4. Prevent accidental loss of work.
+5. Manage different development branches.
+6. Maintain project history.
+7. Support DevOps and CI/CD automation.
+
+### Without Git vs With Git
+
+| Without Git                  | With Git                  |
+| ---------------------------- | ------------------------- |
+| Manual file backups          | Automated version history |
+| Difficult collaboration      | Easy team collaboration   |
+| No structured change history | Complete commit history   |
+| Difficult rollback           | Restore previous versions |
+| Manual code integration      | Branching and merging     |
+
+## 4. Evolution of Git
+
+- 2005: Linus Torvalds created Git for Linux kernel development.
+- 2008: GitHub launched, simplifying Git collaboration.
+- 2010s: Git became widely adopted in software development.
+- Today: Git is a core tool in DevOps, CI/CD, and Infrastructure as Code workflows.
+
+### Git Architecture
+
+Working Directory
+
+Staging Area
+
+Local Repository
+
+git add →
+
+git commit →
+
+git push →
+
+Remote Repository (GitHub)
+
+## 5. Basic Git Commands — Practice
+
+```
+# Check Git version
+git --version
+
+# Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+# Create repository
+mkdir git-practice
+cd git-practice
+git init
+
+# Create a file
+echo "Hello Git" > index.html
+
+# Check status
+git status
+
+# Stage changes
+git add index.html
+
+# Commit changes
+git commit -m "Initial commit"
+
+# View history
+git log --oneline
+```
+
+## 6. Points to Remember
+
+- Git is a VCS; GitHub is a Git hosting platform.
+- Git was created in 2005.
+- Git is distributed, while SVN is centralized.
+- `git add` stages changes.
+- `git commit` records changes locally.
+- `git push` uploads commits to a remote repository.
+- Git is widely used in DevOps and CI/CD.
+
+## 7. Practical Assignment
+
+Task: Create a Git repository and track file changes.
+
+1. Install Git.
+2. Configure username and email.
+3. Create a local repository.
+4. Create `index.html`.
+5. Make the first commit.
+6. Modify the file and create a second commit.
+7. Display commit history using `git log --oneline`.
+
+Expected Outcome: Students understand Git history, repository initialization, staging, commits, and basic version tracking.
+
 # DevOps and Git – Training Notes
 
 Topics: DevOps Basics, Git, GitHub, Branching, Merge, Rebase, Cherry-Pick, Stash, Conflict Resolution and Rollback.
