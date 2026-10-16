@@ -1,4 +1,4 @@
-# Git and GitHub – Training Notes
+# Git and GitHub – Notes
 
 Topics: Version Control Systems, Git Fundamentals, Git Commands, GitHub, Branching, Rebase, Merge, Cherry-Pick, Conflict Resolution, Stashing, and Rollback Techniques.
 
